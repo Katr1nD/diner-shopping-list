@@ -1,0 +1,49 @@
+body {
+    font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+    background-color: #3B3F45;
+    padding: 1em;
+}
+
+header,
+footer {
+    background-color: #4A4F56;
+    color: #EB7E7F;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+
+}
+
+header {
+    width: 100em;
+    line-height: 0.5em;
+}
+
+section {
+
+    color: #EDEDED;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75em;
+}
+
+footer {
+    width: 75em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+}
+
+label {
+    flex-grow: 1;
+}
+
+input[type="checkbox"]:checked+label {
+    text-decoration: line-through;
+}
