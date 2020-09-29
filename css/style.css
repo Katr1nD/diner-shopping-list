@@ -1,7 +1,17 @@
 body {
     font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+    font-size: 2em;
+    transition: all .1s ease-in;
+    margin: 0em;
     background-color: #3B3F45;
-    padding: 1em;
+}
+
+.wrapper {
+    height: 100%;
+    margin: 0 auto;
+    border: 1em solid #FFFFFF;
+    background-color: #3B3F45;
+
 }
 
 header,
@@ -12,18 +22,15 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding: 0.5em;
-
 }
 
 header {
-    width: 100em;
     line-height: 0.5em;
 }
 
 section {
     color: #EDEDED;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 3em auto;
     width: 75em;
 }
 
@@ -35,24 +42,24 @@ section li:nth-child(even) {
     background-color: #7A7593;
 }
 
-footer {
-    width: 75em;
-}
-
 ul {
     list-style: none;
 }
 
-li {
+.list-item {
     display: flex;
-    padding: 1em;
+    height: 3em;
+    align-items: center;
 }
 
 label {
     flex-grow: 1;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
 }
 
-.list:hover {
+.list-item:hover {
     background-color: #625E77;
     border-top: 0.3em solid #F5F4F6;
     border-bottom: 0.3em solid #F5F4F6;
@@ -61,4 +68,47 @@ label {
 input[type="checkbox"]:checked+label {
     text-decoration: line-through;
     color: #B2B2B2;
+}
+
+.list-item:active {
+    background-color: #EA857C;
+}
+
+#pickle+label::after {
+    content: "(for the next lessons about CSS)";
+    color: #B2B2B2;
+    font-size: 0.6em;
+    margin-left: 0.5em;
+}
+
+#apple+label::after {
+    content: "(for more CSS manipulations)";
+    color: #B2B2B2;
+    font-size: 0.6em;
+    margin-left: 0.5em;
+}
+
+#orange+label::after {
+    content: "(because they are awesome)";
+    color: #B2B2B2;
+    font-size: 0.6em;
+    margin-left: 0.5em;
+}
+
+#plate+label::after {
+    content: "(hm.. they always disappear)";
+    color: #B2B2B2;
+    font-size: 0.6em;
+    margin-left: 0.5em;
+}
+
+#sake+label::after {
+    content: "(for my friends)";
+    color: #B2B2B2;
+    font-size: 0.6em;
+    margin-left: 0.5em;
+}
+
+footer {
+    width: 75em;
 }
