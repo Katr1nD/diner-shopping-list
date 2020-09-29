@@ -1,6 +1,6 @@
 body {
     font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
-    font-size: 2em;
+    font-size: 4em;
     transition: all .1s ease-in;
     margin: 0em;
     background-color: #3B3F45;
@@ -11,7 +11,6 @@ body {
     margin: 0 auto;
     border: 1em solid #FFFFFF;
     background-color: #3B3F45;
-
 }
 
 header,
@@ -31,7 +30,7 @@ header {
 section {
     color: #EDEDED;
     margin: 3em auto;
-    width: 75em;
+    width: 40em;
 }
 
 section li:nth-child(odd) {
@@ -57,6 +56,7 @@ label {
     align-self: stretch;
     display: flex;
     align-items: center;
+    padding-left: 1em;
 }
 
 .list-item:hover {
@@ -68,6 +68,38 @@ label {
 input[type="checkbox"]:checked+label {
     text-decoration: line-through;
     color: #B2B2B2;
+}
+
+.checkbox-styles {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox-styles+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.checkbox-styles+label::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #D1DCDD;
+    margin-right: 1em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    background-color: #DEDEDE;
+}
+
+.checkbox-styles:checked+label::before {
+    background-image: url(../img/check.png);
+    background-size: 1em;
 }
 
 .list-item:active {
@@ -110,5 +142,5 @@ input[type="checkbox"]:checked+label {
 }
 
 footer {
-    width: 75em;
+    width: 40em;
 }
