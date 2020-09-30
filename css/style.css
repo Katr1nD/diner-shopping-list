@@ -2,12 +2,9 @@ body {
     font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
     font-size: 4em;
     transition: all .1s ease-in;
-    margin: 0em;
-    background-color: #3B3F45;
 }
 
 .wrapper {
-    height: 100%;
     margin: 0 auto;
     border: 1em solid #FFFFFF;
     background-color: #3B3F45;
@@ -18,13 +15,15 @@ footer {
     background-color: #4A4F56;
     color: #EB7E7F;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     padding: 0.5em;
 }
 
 header {
     line-height: 0.5em;
+}
+
+footer {
+    margin: 0 auto 8em;
 }
 
 section {
@@ -48,7 +47,6 @@ ul {
 .list-item {
     display: flex;
     height: 3em;
-    align-items: center;
 }
 
 label {
@@ -93,7 +91,6 @@ input[type="checkbox"]:checked+label {
     margin-right: 1em;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 50% 50%;
     background-color: #DEDEDE;
 }
 
