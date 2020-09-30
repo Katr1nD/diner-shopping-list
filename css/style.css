@@ -1,6 +1,7 @@
+@import url("./reset.css");
+
 body {
     font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
-    font-size: 4em;
     transition: all .1s ease-in;
 }
 
@@ -8,6 +9,7 @@ body {
     margin: 0 auto;
     border: 1em solid #FFFFFF;
     background-color: #3B3F45;
+    min-height: 95vh;
 }
 
 header,
@@ -15,7 +17,8 @@ footer {
     background-color: #4A4F56;
     color: #EB7E7F;
     text-align: center;
-    padding: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 header {
@@ -23,7 +26,7 @@ header {
 }
 
 footer {
-    margin: 0 auto 8em;
+    margin: 0 auto;
 }
 
 section {
@@ -42,11 +45,14 @@ section li:nth-child(even) {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 .list-item {
     display: flex;
     height: 3em;
+    border-top: 0.3em solid transparent;
+    border-bottom: 0.3em solid transparent;
 }
 
 label {
